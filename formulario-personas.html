@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pacientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Karla&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <H1>Centro Medico U. Distrital</H1>
+</header>
+<main>
+    <form id="registro-pacientes-form">
+    <h2>Registro Pacientes</h2>
+    <label for="name">Nombres</label>
+    <input type="text" id="nombre" placeholder="ingrese su nombre" autocomplete="on" required>
+    <label for="name">Apellidos: </label>
+    <input type="text" id="apellido" placeholder="ingrese su Apellido" autocomplete="on" required>
+    <label for="Tipo id">Tipo Documento:</label>
+            <select id="Tipo id" name="Tipo id" required>
+                <option value="">------------------------  Tipo Documento  ---------------------</option>
+                <option value="CC">Cedula Ciudadania</option>
+                <option value="TE">Tarjeta Extranjeria</option>
+                <option value="Pasaporte"> Pasaporte</option>
+                <option value="CE">Cedula Extranjeria</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="RC">Registro Civil</option>
+            </select>
+    <label for="id">Cedula: </label>
+    <input type="number" id="cedula" placeholder="ingrese su Cedula" autocomplete="on" required>
+    <label for="age">Edad: </label>
+    <input type="number" id="Edad" placeholder="ingrese su Edad" autocomplete="on" required>
+    <label for="tel">Telefono: </label>
+    <input type="number" id="Telefono" placeholder="ingrese su Telefono" autocomplete="on" required>
+    <label for="especialidad">Especialidad:</label>
+            <select id="especialidad" name="especialidad" required>
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Medicina interna"> Medicina interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitacion Fisica">Rehabilitacion Fisica</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiologia">Radiologia</option>
+            </select>
+            <input type="checkbox">
+            <label>Acepto terminos y condiciones</label>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="boton-container">
+            <input type="button" id="botonVolver" value="Volver">
+    
+        </div>
+        </main>
+        <script src="volver.js"></script>
+        <script src="registro-pacientes.js"></script>
+</body>
+</html>
